@@ -50,10 +50,10 @@ Task Manager is a React-based web application that allows users to manage tasks 
  3. CSS: For styling the application.
 
 # Additional Information
- 1. Future Enhancements
- 2. User Authentication: Allow multiple users to create and manage personal tasks.
- 3. Deadline Reminders: Notify users as deadlines approach.
- 4. Task Dependencies: Link related tasks together.
+ # Future Enhancements
+   1. User Authentication: Allow multiple users to create and manage personal tasks.
+   2. Deadline Reminders: Notify users as deadlines approach.
+   3. Task Dependencies: Link related tasks together.
 
 # Known Issues
  Local Storage Limitations: Task data is stored in the browser's local storage, which may have storage limitations.
