@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import TaskForm from './TaskForm';
 import TaskSection from './TaskSection';
 import { getTasks, saveTasks } from '../utils/storage';
-import '../styles/Dashboard.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import '../styles/Dashboard.css';
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
@@ -15,6 +17,7 @@ const Dashboard = () => {
     const updatedTasks = [...tasks, { ...newTask, id: Date.now() }];
     setTasks(updatedTasks);
     saveTasks(updatedTasks);
+    toast.success("Task Added!");
   };
 
   const editTask = (updatedTask) => {
@@ -23,12 +26,14 @@ const Dashboard = () => {
     );
     setTasks(updatedTasks);
     saveTasks(updatedTasks);
+    toast.info("Task Edited!");
   };
 
   const deleteTask = (id) => {
     const updatedTasks = tasks.filter((task) => task.id !== id);
     setTasks(updatedTasks);
     saveTasks(updatedTasks);
+    toast.error("Task Deleted!");
   };
 
   const toggleTaskCompletion = (id) => {
@@ -37,6 +42,7 @@ const Dashboard = () => {
     );
     setTasks(updatedTasks);
     saveTasks(updatedTasks);
+    toast.info("Task Updated!");
   };
 
   // Filter tasks for different sections
@@ -45,7 +51,9 @@ const Dashboard = () => {
   const completedTasks = tasks.filter((task) => task.completed);
 
   return (
+    
     <div className="dashboard">
+
       <h1>Task Dashboard</h1>
       <TaskForm onSubmit={addTask} />
 
@@ -73,6 +81,7 @@ const Dashboard = () => {
         />
       </div>
 
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} closeOnClick pauseOnHover draggable />
     </div>
   );
 };

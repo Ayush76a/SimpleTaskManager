@@ -1,10 +1,12 @@
 import React from 'react';
 import Dashboard from './components/Dashboard';
-import './styles/App.css'; // Assuming you created an App.css file for styling
+import './styles/App.css'; 
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   return (
     <div className="App">
+    <ToastContainer />
       <Dashboard />
     </div>
   );
