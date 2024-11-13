@@ -8,12 +8,19 @@ import '../styles/Dashboard.css';
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [priorityFilter, setPriorityFilter] = useState(""); // State for priority filter
+  const [dateFilter, setDateFilter] = useState(""); // State for date filter
 
   useEffect(() => {
     setTasks(getTasks());
   }, []);
 
   const addTask = (newTask) => {
+    if (!newTask.title || !newTask.dueDate) {
+      toast.warn("Please add a title and due date!");
+      return;
+    }
     const updatedTasks = [...tasks, { ...newTask, id: Date.now() }];
     setTasks(updatedTasks);
     saveTasks(updatedTasks);
@@ -45,17 +52,89 @@ const Dashboard = () => {
     toast.info("Task Updated!");
   };
 
-  // Filter tasks for different sections
-  const upcomingTasks = tasks.filter((task) => !task.completed && new Date(task.dueDate) > new Date());
-  const overdueTasks = tasks.filter((task) => !task.completed && new Date(task.dueDate) < new Date());
-  const completedTasks = tasks.filter((task) => task.completed);
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handlePriorityChange = (e) => {
+    setPriorityFilter(e.target.value);
+  };
+
+  const handleDateChange = (e) => {
+    setDateFilter(e.target.value);
+  };
+
+  // Clear all filters
+  const clearFilters = () => {
+    setSearchTerm("");
+    setPriorityFilter("");
+    setDateFilter("");
+  };
+
+  // Filter tasks based on search term, priority, and date
+  const filteredTasks = tasks
+    .filter((task) =>
+      task.title && task.title.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .filter((task) =>
+      priorityFilter ? task.priority === priorityFilter : true
+    )
+    .filter((task) =>
+      dateFilter ? new Date(task.dueDate).toDateString() === new Date(dateFilter).toDateString() : true
+    );
+
+  const upcomingTasks = filteredTasks.filter((task) => !task.completed && new Date(task.dueDate) > new Date());
+  const overdueTasks = filteredTasks.filter((task) => !task.completed && new Date(task.dueDate) < new Date());
+  const completedTasks = filteredTasks.filter((task) => task.completed);
 
   return (
-    
     <div className="dashboard">
-
       <h1>Task Dashboard</h1>
+
+  
+
+    {/* Form in left and filter in right */}
+  <div className="filter-form-row">
+    <div className="task-form-container">
       <TaskForm onSubmit={addTask} />
+    </div>
+    
+    {/* Filter Section on the right */}
+    <div className="filter-section">
+    <div className="filter-container">
+     <h3 className='filter-heading'>Filter: </h3>
+      {/* Search Input */}
+      <input
+        type="text"
+        placeholder="🔍"
+        value={searchTerm}
+        onChange={handleSearchChange}
+        className="search-input"
+      /> 
+
+      {/* Priority Filter Dropdown */}
+      <select value={priorityFilter} onChange={handlePriorityChange} className="priority-filter">
+        <option value="">Priority</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      {/* Date Filter */}
+      <input
+        type="date"
+        value={dateFilter}
+        onChange={handleDateChange}
+        className="date-filter"
+      />
+
+      {/* Clear Filters Button */}
+      <button onClick={clearFilters} className="clear-filters-button">
+        Remove All
+      </button>
+    </div>
+  </div>
+  </div>
 
       <div className="task-sections">
         <TaskSection

@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -12,6 +13,103 @@ h1 {
   text-align: center;
   color: #333;
 }
- 
+
+/* Filter container to hold all filter elements */
+.filter-container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  width:80%;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  background-color: #333;
+  padding-right: 0px;
+  padding-left: 6px;
+  margin-left: 18%;
+}
+
+.filter-heading{
+  color: #ccc;
+  font-size: 15px;
+}
+
+/* Search Input */
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: right;
+  width: 20%;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #00ff73 ;
+  outline: none;
+}
+
+/* Priority Dropdown */
+.priority-filter {
+  padding: 8px 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 16%;
+  font-size: 13px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.priority-filter:focus {
+  border-color: #53f26e;
+  outline: none;
+}
+
+/* Date Filter */
+.date-filter {
+  padding: 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 17%;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.date-filter:focus {
+  border-color: #53f26e;
+  outline: none;
+}
+
+/* Clear Filters Button */
+.clear-filters-button {
+  padding: 9px 8px !important;
+  margin-right:0px !important;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-filters-button:hover {
+  background-color: #e03232;
+}
+
+
+/* Container for filter and form sections in a single row */
+.filter-form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
 
   
