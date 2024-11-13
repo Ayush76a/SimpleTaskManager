@@ -46,9 +46,9 @@ Task Manager is a React-based web application that allows users to manage tasks 
  6. Categorize Tasks: Tasks are automatically categorized into Upcoming, Overdue, and Completed based on due date.
 
 # Technologies Used
- 1. React ![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp; : For building the user interface.
- 2. React Toastify: For displaying notifications.
- 3. CSS: For styling the application.
+ 1. ![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp; : For building the user interface.
+ 2. ![React Toastify](https://img.shields.io/badge/React%20Toastify-FFDD00?style=for-the-badge&logo=react&logoColor=white) : For displaying notifications.
+ 3. ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white): For styling the application.
 
 # Additional Information
  ## Future Enhancements
