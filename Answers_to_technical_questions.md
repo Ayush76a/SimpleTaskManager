@@ -1,7 +1,7 @@
 # Answers to Technical Questions
 
 ## How long did you spend on the coding test?
-I spent approximately 14-15 hours over a duration of 2 days developing this Task Manager app. Most of the time had been spent on improving UI and CSS.
+I spent approximately 14-15 hours over a duration of 2 days developing this Task Manager app. 
 
 ## What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 One of the most useful features in the latest version of JavaScript (ES2021) is the Logical Assignment Operators, which allows more concise and readable code when dealing with conditions.
