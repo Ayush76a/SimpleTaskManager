@@ -42,10 +42,11 @@ Task Manager is a React-based web application that allows users to manage tasks 
  2. Edit Task: Click the edit icon next to any task to update its details.
  3. Delete Task: Click the delete icon next to any task to remove it from the list.
  4. Search Tasks: Use the search bar to find tasks by title.
- 5. Categorize Tasks: Tasks are automatically categorized into Upcoming, Overdue, and Completed based on due date.
+ 5. Filter Tasks: Use the filters available like priority or date to filter tasks.
+ 6. Categorize Tasks: Tasks are automatically categorized into Upcoming, Overdue, and Completed based on due date.
 
 # Technologies Used
- 1. React: For building the user interface.
+ 1. React ![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp; : For building the user interface.
  2. React Toastify: For displaying notifications.
  3. CSS: For styling the application.
 
