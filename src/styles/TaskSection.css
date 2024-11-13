@@ -1,10 +1,10 @@
-
 .task-sections {
     margin-top: 1px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Divide the container into 3 equal columns */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 20px;
-  }
+}
+
 
 .task-section {
     padding: 10px;
@@ -24,7 +24,6 @@
 .task {
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -34,43 +33,94 @@
 .task h3 {
     margin: 0;
     color: #333;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.desc{
+    font-family: cursive;
+    font-weight: 550;
 }
 
 .task p {
-    margin: 5px 0;
+    margin: 3px 0;
     color: #555;
     font-size: 14px;
 }
 
-/* /* here  is the updation */
+.due-priority {
+    display: flex; 
+    justify-content:left; 
+    margin-bottom: 2px; 
+}
+  
+.due-priority p {
+    font-size: 13px;
+    margin-top: 2px;
+}
+.prior{
+    margin-left:10% !important;
+}
 
 .task-buttons {
-    display: flex;
-    flex-direction: row; /* Change to row direction */
-    gap: 10px;
+    flex-direction: row; 
     margin-top: 10px;
-  }
+}
 
-.task-button {
-    padding: 6px 12px;
-    font-size: 14px;
+
+.complete_button {
+    margin: 0 10%;
+    margin-top: 10px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 10px;
+    padding:7px;
+    font-size: 15px;
+    cursor:pointer;
+    margin-left: 13%;
+}
+.complete_button:hover{
+    border: solid black 1px;
 }
 
-.complete-button {
-    background-color: #4CAF50;
-    color: white;
+.edit_button {
+    margin: 0 10%;
+    margin-top: 10px;
+    padding:7px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.edit_button:hover{
+    border: solid black 1px;
 }
 
-.edit-button {
-    background-color: #ff9800;
-    color: white;
+.delete_button {
+    margin: 0 10%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    padding:7px;
+    font-size: 15px;
+    cursor:pointer;
+}
+.delete_button:hover{
+    border: solid black 1px;
 }
 
-.delete-button {
-    background-color: #f44336;
-    color: white;
+.task.low-priority {
+    background-color: #a1d1e0df;
+}
+
+.task.medium-priority {
+background-color: #ffcc99;
+}
+
+.task.high-priority {
+background-color: #ff9999; 
+}
+.high-priority {
+    border: 2px solid red;
+    background-color: #ffdddd;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.1);
 }
