@@ -17,7 +17,7 @@ Task Manager is a React-based web application that allows users to manage tasks 
  1. Clone the repository:
   Copy code : 
   git clone https://github.com/yourusername/task-manager.git 
-   cd task-manager
+  -> cd task-manager
 
  2. Install dependencies:
   Copy code : 
@@ -25,8 +25,9 @@ Task Manager is a React-based web application that allows users to manage tasks 
 
  3. Run the application:
   Copy code : 
-  npm start 
-   The app will start on http://localhost:3000. You can access it in your browser.
+  npm start ->
+  The app will start on http://localhost:3000.
+   You can access it in your browser.
 
 # Folder Structure
  1. src/components: Contains reusable components like TaskForm, TaskSection, and Dashboard.
