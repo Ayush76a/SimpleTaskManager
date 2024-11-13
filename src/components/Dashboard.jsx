@@ -91,8 +91,6 @@ const Dashboard = () => {
     <div className="dashboard">
       <h1>Task Dashboard</h1>
 
-  
-
     {/* Form in left and filter in right */}
   <div className="filter-form-row">
     <div className="task-form-container">
@@ -102,7 +100,7 @@ const Dashboard = () => {
     {/* Filter Section on the right */}
     <div className="filter-section">
     <div className="filter-container">
-     <h3 className='filter-heading'>Filter: </h3>
+     <h3 className='filter-heading'>Filters: </h3>
       {/* Search Input */}
       <input
         type="text"
