@@ -10,8 +10,8 @@ Task Manager is a React-based web application that allows users to manage tasks 
 
 # Getting Started
 ## Prerequisites
-  Node.js (version 14 or higher recommended)
-  npm (version 6 or higher)
+   1. Node.js (version 14 or higher recommended)
+   2. npm (version 6 or higher)
 
 # Installation
  1. Clone the repository:
