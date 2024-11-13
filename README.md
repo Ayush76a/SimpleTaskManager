@@ -1,5 +1,5 @@
 # Simple Task Manager App
-Task Manager is a React-based web application that allows users to manage tasks efficiently. Users can add, edit, and delete tasks, mark them as complete or incomplete, and view tasks by category: Upcoming, Overdue, and Completed. Additionally, a search feature allows users to filter tasks by title, date and priority. Toast notifications provide real-time feedback on task actions.
+Hello 👋, Simple Task Manager is a React-based web application that allows users to manage tasks efficiently. Users can add, edit, and delete tasks, mark them as complete or incomplete, and view tasks by category: Upcoming, Overdue, and Completed. Additionally, a search feature allows users to filter tasks by title, date and priority. Toast notifications provide real-time feedback on task actions.
 
 # Live Link
   https://ayush76a.github.io/SimpleTaskManager/
@@ -48,7 +48,7 @@ Task Manager is a React-based web application that allows users to manage tasks 
 # Technologies Used
  1. ![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp; : For building the user interface.
  2. ![React Toastify](https://img.shields.io/badge/React%20Toastify-FFDD00?style=for-the-badge&logo=react&logoColor=white) : For displaying notifications.
- 3. ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white): For styling the application.
+ 3. ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) : For styling the application.
 
 # Additional Information
  ## Future Enhancements
