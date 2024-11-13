@@ -15,18 +15,18 @@ Task Manager is a React-based web application that allows users to manage tasks 
 
 # Installation
  1. Clone the repository:
-  Copy code
-  git clone https://github.com/yourusername/task-manager.git
-  cd task-manager
+  Copy code : 
+  git clone https://github.com/yourusername/task-manager.git 
+   cd task-manager
 
  2. Install dependencies:
-  Copy code
-  npm install
+  Copy code : 
+  npm install 
 
  3. Run the application:
-  Copy code
-  npm start
-  The app will start on http://localhost:3000. You can access it in your browser.
+  Copy code : 
+  npm start 
+   The app will start on http://localhost:3000. You can access it in your browser.
 
 # Folder Structure
  1. src/components: Contains reusable components like TaskForm, TaskSection, and Dashboard.
@@ -41,7 +41,7 @@ Task Manager is a React-based web application that allows users to manage tasks 
  5. Categorize Tasks: Tasks are automatically categorized into Upcoming, Overdue, and Completed based on due date.
 
 # Technologies Used
- 1.. React: For building the user interface.
+ 1. React: For building the user interface.
  2. React Toastify: For displaying notifications.
  3. CSS: For styling the application.
 
@@ -52,4 +52,4 @@ Task Manager is a React-based web application that allows users to manage tasks 
  4. Task Dependencies: Link related tasks together.
 
 # Known Issues
-Local Storage Limitations: Task data is stored in the browser's local storage, which may have storage limitations.
+ Local Storage Limitations: Task data is stored in the browser's local storage, which may have storage limitations.
