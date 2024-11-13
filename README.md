@@ -33,8 +33,7 @@ In addition, a brief overview of each features is provided in "overview.md" file
      
      npm start 
 
-     The app will start on http://localhost:3000.
-     You can access it in your browser.
+The app will start on http://localhost:3000. You can access it in your browser.
 
 ## Folder Structure
  1. src/components: Contains reusable components like TaskForm, TaskSection, and Dashboard.
