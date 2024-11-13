@@ -1,5 +1,5 @@
 # Simple Task Manager App
-Task Manager is a React-based web application that allows users to manage tasks efficiently. Users can add, edit, and delete tasks, mark them as complete or incomplete, and view tasks by category: Upcoming, Overdue, and Completed. Additionally, a search feature allows users to filter tasks by title date and priority. Toast notifications provide real-time feedback on task actions.
+Task Manager is a React-based web application that allows users to manage tasks efficiently. Users can add, edit, and delete tasks, mark them as complete or incomplete, and view tasks by category: Upcoming, Overdue, and Completed. Additionally, a search feature allows users to filter tasks by title, date and priority. Toast notifications provide real-time feedback on task actions.
 
 ## Features
   1. Add, Edit, and Delete Tasks: Add new tasks with a title, description, due date, and priority.
