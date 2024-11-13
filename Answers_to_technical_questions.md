@@ -1,9 +1,9 @@
-## Answers to Technical Questions
+# Answers to Technical Questions
 
-# How long did you spend on the coding test?
+## How long did you spend on the coding test?
 I spent approximately 12-13 hours over a duration of 2 days developing this Task Manager app. 
 
-# What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
+## What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 One of the most useful features in the latest version of JavaScript (ES2021) is the Logical Assignment Operators, which allows more concise and readable code when dealing with conditions.
 Here’s an example of how it’s used in the app:
 
@@ -20,7 +20,7 @@ Other is, Using logical assignment operators like ||=, &&=, and ??= would make u
 let updates = {};
 updates.title ||= "Default Title"; // Assign only if updates.title is false
 
-# How would you track down a performance issue in production? Have you ever had to do this?
+## How would you track down a performance issue in production? Have you ever had to do this?
 To track down a performance issue in production, I would take the following steps:
 
 1. Monitor Logs and Metrics: Use logging tools (e.g., Loggly or ELK Stack) to identify any obvious errors or unusual patterns.
@@ -30,7 +30,7 @@ To track down a performance issue in production, I would take the following step
    
 Yes, I have previously tracked down performance issues in production for web applications(eg. "Hire me", "Mess Relay" apps, repo on my github), where I primarily used Chrome DevTools and server logs to pinpoint delays in API requests and optimize database queries.
 
-# If you had more time, what additional features or improvements would you consider adding to the task management application?
+## If you had more time, what additional features or improvements would you consider adding to the task management application?
 If I had more time, I would consider adding the following features to enhance the Task Manager app:
 
 1. UI: I think the UI needs to be more appealing somewhat like animated and font selections and color palette needs to be improved.
