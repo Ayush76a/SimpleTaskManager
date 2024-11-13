@@ -19,17 +19,16 @@ In addition, a brief overview of each features is provided in "overview.md" file
 
 ## Installation
  1. Clone the repository:
-  Copy code : 
-      git clone https://github.com/Ayush76a/SimpleTaskManager ->
+      git clone https://github.com/Ayush76a/SimpleTaskManager 
+
       cd task-manager
 
  2. Install dependencies:
-    Copy code : 
      npm install 
 
  3. Run the application:
-    Copy code : 
-     npm start .
+     npm start 
+
      The app will start on http://localhost:3000.
      You can access it in your browser.
 
