@@ -26,8 +26,9 @@ To track down a performance issue in production, I would take the following step
 1. Monitor Logs and Metrics: Use logging tools (e.g., Loggly or ELK Stack) to identify any obvious errors or unusual patterns.
 2. Profiling: Utilize profiling tools such as Chrome DevTools for frontend or APM tools like New Relic for backend to identify bottlenecks in code execution.
 3. Analyze Network Requests: Check network activity to ensure API calls are optimized and not causing delays.
-4. Optimize Resource-Intensive Operations: If issues are detected in specific areas, I would use techniques like memoization, debouncing, and caching. 
-Yes, I have previously tracked down performance issues in production for web applications, where I primarily used Chrome DevTools and server logs to pinpoint delays in API requests and optimize database queries.
+4. Optimize Resource-Intensive Operations: If issues are detected in specific areas, I would use techniques like memoization, debouncing, and caching.
+   
+Yes, I have previously tracked down performance issues in production for web applications(eg. "Hire me", "Mess Relay" apps, repo on my github), where I primarily used Chrome DevTools and server logs to pinpoint delays in API requests and optimize database queries.
 
 # If you had more time, what additional features or improvements would you consider adding to the task management application?
 If I had more time, I would consider adding the following features to enhance the Task Manager app:
@@ -40,4 +41,5 @@ If I had more time, I would consider adding the following features to enhance th
 6. Data Synchronization with a Database: Move from local storage to a database like MongoDB, enabling multi-device access and more robust data persistence.
 7. Task Prioritization and Sorting Options: Add priority levels and sorting options for tasks to allow users to organize tasks based on urgency or due date.
 8. Analytics and Reports: Provide insights into completed tasks, overdue tasks, and productivity metrics.
+
 These additions would improve the app’s scalability, accessibility, and usability for a broader range of users.
