@@ -12,13 +12,9 @@ const updateTask = (id, updates) => {
     task.id === id ? { ...task, ...updates } : task
   );
   setTasks(updatedTasks);
-  localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+  saveTasks(updatedTasks);
+  toast.info("Task Updated!");
 };
-
-Other is, Using logical assignment operators like ||=, &&=, and ??= would make updates more concise:
-
-let updates = {};
-updates.title ||= "Default Title"; // Assign only if updates.title is false
 
 ## How would you track down a performance issue in production? Have you ever had to do this?
 To track down a performance issue in production, I would take the following steps:
