@@ -1,6 +1,6 @@
 # Simple Task Manager App
 Hello 👋, Simple Task Manager is a React-based web application that allows users to manage tasks efficiently. Users can add, edit, and delete tasks, mark them as complete or incomplete, and view tasks by category: Upcoming, Overdue, and Completed. Additionally, a search feature allows users to find tasks by their title and filters using date and priority to filter tasks. Toast notifications provide real-time feedback on task actions.
-In addition, a brief overview of each features is provided in "overview.md" file.
+In addition, a brief overview of each features is provided in "overview.md" file(!!! Please read it, for better overview).
 
 # Live Link
   https://ayush76a.github.io/SimpleTaskManager/
