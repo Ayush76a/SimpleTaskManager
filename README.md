@@ -36,7 +36,7 @@ In addition, a brief overview of each features is provided in "overview.md" file
 The app will start on http://localhost:3000. You can access it in your browser.
 
 ## Folder Structure
- 1. src/components: Contains reusable components like TaskForm, TaskSection, and Dashboard.
+ 1. src/components: Contains reusable components like TaskForm, TaskSection, Dashboard, EditForm and Task.
  2. src/utils: Contains utility functions, including getTasks and saveTasks for local storage management.
  3. src/styles: Contains CSS files for styling components.
 
