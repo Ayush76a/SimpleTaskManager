@@ -4,7 +4,7 @@ Task Manager is a React-based web application that allows users to manage tasks 
 # Live Link
   https://ayush76a.github.io/SimpleTaskManager/
 
-## Features
+# Features
   1. Add, Edit, and Delete Tasks: Add new tasks with a title, description, due date, and priority.
   2. Mark Tasks as Complete or Incomplete: Toggle tasks between complete and incomplete.
   3. Search Functionality: Filter tasks by title.
@@ -16,7 +16,7 @@ Task Manager is a React-based web application that allows users to manage tasks 
    1. Node.js (version 14 or higher recommended)
    2. npm (version 6 or higher)
 
-# Installation
+## Installation
  1. Clone the repository:
   Copy code : 
       git clone https://github.com/Ayush76a/SimpleTaskManager ->
@@ -32,7 +32,7 @@ Task Manager is a React-based web application that allows users to manage tasks 
      The app will start on http://localhost:3000.
      You can access it in your browser.
 
-# Folder Structure
+## Folder Structure
  1. src/components: Contains reusable components like TaskForm, TaskSection, and Dashboard.
  2. src/utils: Contains utility functions, including getTasks and saveTasks for local storage management.
  3. src/styles: Contains CSS files for styling components.
